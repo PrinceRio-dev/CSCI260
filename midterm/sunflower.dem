@@ -1,0 +1,11 @@
+#set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
+#set output 'sunflower.1.png'
+unset key
+unset border
+unset xtics
+unset ytics
+set size square
+set title "Fibonacci Sunflower Spiral"
+set title  offset character 0, 0.5, 0 font ",24" norotate
+
+plot "point1.txt" with points pointtype 7
